@@ -1,12 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
-    <link src="stylesheet" href="styles.css">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+  <div class="bg"></div>
+  <header>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">The best site to learn to code</p>
+  </header>
+  <main>
+    <form id="survey-form">
+      <label id="name-label" for="name">Name<input id="name" type="text" required placeholder="Type your name..." value=""></label>
+      <label id="email-label" for="email">Email<input id="email" type="email" required placeholder="Your email goes here..." value=""></label>
+      <label id="number-label" for="number">Age (optional)<input id="number" type="number" min="0" max="120" placeholder="Now your age (if you want)..." value=""></label>
+      <label for="dropdown">Which option describes your current role?
+      <select id="dropdown" value="">
+        <option value="">Student</option>
+        <option value="">Full Time Job</option>
+      </select>
+      </label>
+      <p>Would you recommend freeCodeCamp to a friend?</p>
+      <label>
+        <input class="input-radio" type="radio" name="radio-button" value="definitely">Definitely
+      </label>
+      <label>
+        <input class="input-radio" type="radio" name="radio-button" value="maybe">Maybe
+      </label>
+      <label>
+        <input class="input-radio" type="radio" name="radio-button" value="not_sure">Not sure
+      </label>
+      <label for="dropdown2">What is your favorite feature of freeCodeCamp?
+      <select id="dropdown2" value="">
+        <option value="">Challenges</option>
+        <option value="">Projects</option>
+      </select>
+      </label>
+      <p>What would you like to see improved? (Check all that apply)</p>
+      <label>
+        <input class="input-checkbox" type="checkbox" value="front-end-projects">Front-End Projects</input>
+      </label>
+      <label>
+        <input class="input-checkbox" type="checkbox" value="back-end-projects">Back-End Projects</input>
+      </label>
+      <label>Any comments or suggestions?
+        <textarea placeholder="Enter your comments here..." value=""></textarea>
+      </label>
+      <input type="submit" id="submit" value="Submit">
+    </form>
+  </main>
 </body>
 </html>

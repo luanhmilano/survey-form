@@ -1,0 +1,41 @@
+body, html {
+    margin: 0;
+    background-image: url(images/camping.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    text-align: center;
+    color: #fff;
+    display: block;
+}
+
+main {
+    background-color: aqua;
+    width: 60vw;
+    max-width: 720px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+label, p {
+    display: block;
+    margin: 0.5rem 0;
+    padding: 10px;
+}
+
+.input-radio {
+    display: inline-block;
+}
+
+.input-checkbox {
+    display: inline-block;
+}
+
+input, select, textarea {
+    display: block;
+}
+
