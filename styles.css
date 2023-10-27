@@ -1,16 +1,89 @@
-body, html {
+:root {
+    --color-white: #f3f3f3;
+    --color-darkblue: #1b1b32;
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+    --color-green: #37af65;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--color-white);
     margin: 0;
-    background-image: url(images/camping.jpg);
+}
+
+.container {
+    width: 100%;
+    margin: 3.125rem auto 0 auto;
+}
+
+div {
+    display: block;
+}
+
+*::before {
+    box-sizing: border-box;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
     height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7), url(images/camping.-image.jpg));
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header {
+    padding: 0 0 0.625rem;
+    margin-bottom: 1.875rem;
 }
 
 header {
-    text-align: center;
-    color: #fff;
     display: block;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.description {
+    font-style: italic;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+h1, p {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-weight: 400;
+    line-height: 1.2;
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+p {
+    font-size: 1.125rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 main {
@@ -25,6 +98,11 @@ label, p {
     display: block;
     margin: 0.5rem 0;
     padding: 10px;
+}
+
+.clue {
+    margin-left: 0.25rem;
+    font-size: 0.9rem;
 }
 
 .input-radio {
